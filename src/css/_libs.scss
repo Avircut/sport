@@ -1,0 +1,15 @@
+@import '~slick-carousel/slick/slick.scss';
+@import '~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css';
+
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: black;
+  border-radius: 100px;
+  width: 10px;
+}
+
+.mCS-my-theme.mCSB_scrollTools .mCSB_draggerRail{
+  background-color: transparent;
+}
+.mCSB_inside>.mCSB_container{
+  margin-right: 0;
+}

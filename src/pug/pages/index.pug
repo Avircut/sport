@@ -1,0 +1,323 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    .circle
+    .arrow-top.arrow
+      .arrow__circle_not_animated.arrow__circle
+      img.arrow-top__img(src="images/icons/arrow.svg", alt="")
+    header.header#top
+      .container
+        .header__inner
+          .top-line
+            .top-line__logo.logo
+              a(href="#").logo__link 
+                img.logo__img(src="images/logo/logo.svg", alt="")  
+              img.logo__text(src="images/logo/logo-text.svg", alt="")
+            .top-line__herb-wrapper
+              .top-line__herb
+                img.top-line__herb-img(src="images/logo/herb.svg", alt="")
+            .top-line__contacts
+              a.top-line__email(href="mailto:") edinoborstva_27@mail.ru
+              a.top-line__phone(href="tel:") +7 (4212) 45-78-22
+            .top-line__eye
+              img.top-line__eye-img(src="images/icons/eye.svg", alt="")
+            .top-line__search
+              input.top-line__search-input(type="text",placeholder="поиск")
+              .top-line__search-btn
+            .top-line__burger
+              img(src="images/icons/burger.svg", alt="")
+            .burger__menu-wrapper
+              .burger__closeBtn
+                img.closeBtn__img(src="images/icons/cross.svg", alt="")
+              ul.burger__menu
+              .burger__features
+          nav.header__nav.nav
+            ul.nav__menu
+              li.nav__menu-item
+                a(data-scroll, href="#about").nav__menu-link О центре
+              li.nav__menu-item
+                a(href="#").nav__menu-link Спортивная школа
+              li.nav__menu-item
+                a(href="#").nav__menu-link Услуги
+              li.nav__menu-item
+                a(href="#").nav__menu-link Стоимость услуг
+              li.nav__menu-item
+                a(href="#").nav__menu-link Расписание
+              li.nav__menu-item
+                a(href="#").nav__menu-link События
+              li.nav__menu-item
+                a(href="#").nav__menu-link Контакты
+    .wrapper
+      main.main
+        section.banner
+          .container
+            .banner__inner
+              .banner__info-slides
+                .banner__info
+                  h1.banner__title Спортивная <br /> школа
+                  .banner__details
+                    p.banner__desc Краевой центр единоборств приглашает мальчиков и девочек для занятий в отделения: Самбо, Дзюдо, Фехтование, Прыжки на батуте, Борьба, Каратэ
+                    .banner__more.btn Подробнее
+                .banner__info
+                  h1.banner__title Спортивная <br /> школа
+                  .banner__details
+                    p.banner__desc Краевой центр единоборств приглашает мальчиков и девочек для занятий в отделения: Самбо, Дзюдо, Фехтование, Прыжки на батуте, Борьба, Каратэ
+                    .banner__more.btn Подробнее
+                .banner__info
+                  h1.banner__title Спортивная <br /> школа
+                  .banner__details
+                    p.banner__desc Краевой центр единоборств приглашает мальчиков и девочек для занятий в отделения: Самбо, Дзюдо, Фехтование, Прыжки на батуте, Борьба, Каратэ
+                    .banner__more.btn Подробнее
+                p.banner__arrows
+              .banner__images
+                img.banner__img(src="images/content/banner/banner-1.png", alt="")
+                img.banner__img(src="images/content/banner/banner-1.png", alt="")
+                img.banner__img(src="images/content/banner/banner-1.png", alt="")
+        section.about.section
+          .container
+            .about__inner
+              .about__collage
+                img.about__img(src="images/content/collage/collage-bg.png", alt="")
+                img.about__collage-photo.about__collage-photo_first(src="images/content/collage/collage-1.png", alt="")
+                img.about__collage-photo.about__collage-photo_second(src="images/content/collage/collage-2.png", alt="")
+                img.about__collage-photo.about__collage-photo_third.about__collage-photo_animate(src="images/content/collage/collage-3.png", alt="")
+              .about__text
+                .about__head.head
+                  h1.about__title о центре
+                  .head__img#circles
+                p.about__desc Дворец единоборств построен по масштабной программе улучшения социальной инфраструктуры на Дальнем Востоке. <br /> <br />В здании площадью около 5 тысяч квадратных метров размещены универсальный спортивный зал с трибунами на 1200 зрителей, помещения для различных видов единоборств, спортивные залы с раздевалками и душевыми.<br /><br />Также во дворце есть медпункт, помещения допинг-контроля, конференц-зал и столовая. Одновременно в здании смогут находиться до полутора тысяч человек.
+        section.directions.section
+          .container
+            .directions__inner
+              .directions__head.head
+                h1.directions__title направления
+                .head__img#directions-arrows
+              .directions__items
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-1.svg", alt="")
+                  h2.directions__title Фехтование
+                  p.directions__desc Олимпийский вид спорта, суть которого заключается в ведении боя с использованием холодного оружия
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-2.svg", alt="")
+                  h2.directions__title Прыжки на батуте
+                  p.directions__desc Выполнение акробатических упражнений во время непрерывных ритмических прыжков на батуте 
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-3.svg", alt="")
+                  h2.directions__title Каратэ
+                  p.directions__desc Учит уверенности в себе, внутреннему спокойствию, способности освобождаться от негативных эмоций
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-4.svg", alt="")
+                  h2.directions__title Борьба
+                  p.directions__desc Спортивное единоборство, заключается в поединке двух спортсменов по определенным правилам
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-5.svg", alt="")
+                  h2.directions__title Дзюдо
+                  p.directions__desc Олимпийский вид спорта, суть которого заключается в ведении боя с использованием холодного оружия
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-6.svg", alt="")
+                  h2.directions__title Самбо
+                  p.directions__desc Выполнение акробатических упражнений во время непрерывных ритмических прыжков на батуте 
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-7.svg", alt="")
+                  h2.directions__title Киокусинкай
+                  p.directions__desc Учит уверенности в себе, внутреннему спокойствию, способности освобождаться от негативных эмоций
+                .directions__item.card
+                  .directions__item-nav
+                    a(href="#").directions__link.arrow
+                      .arrow__circle
+                      img.directions__linkImg(src="images/icons/arrow.svg", alt="")
+                    img.directions__icon(src="images/content/directions/directions-8.svg", alt="")
+                  h2.directions__title Бокс
+                  p.directions__desc Спортивное единоборство, заключается в поединке двух спортсменов по определенным правилам
+        section.events.section
+          .container
+            .events__inner
+              .events__head
+                .head
+                  h1.events__title События
+                  .head__img#events
+                a(href="#").events__btn все события
+                  .arrow
+                    .arrow__circle
+                    img.events__arrow(src="images/icons/arrow.svg", alt="")
+              .events__body
+                .events__latest
+                  .events__item.card
+                    a(href="#").events__item-link.item-link
+                      span
+                    .events__img-wrapper
+                      a(href="#").events__item-tag.events__item-tag_blue Мероприятия
+                      img.events__item-img(src="images/content/events/events-1.png", alt="")
+                    .events__date 22.04.2022
+                    .events__desc Дальневосточные игры боевых искусств
+                  .events__item.card
+                    a(href="#").events__item-link.item-link
+                      span
+                    .events__img-wrapper
+                      a(href="#").events__item-tag.events__item-tag_orange Новости
+                      img.events__item-img.events__item-img_pos_bottom(src="images/content/events/events-2.png", alt="")
+                    .events__date 22.04.2022
+                    .events__desc Первенство России по греко-римской борьбе
+                .events__others
+                  .events__item.card
+                    a(href="#").events__item-link.item-link
+                      span
+                    .events__img-wrapper
+                      a(href="#").events__item-tag.events__item-tag_blue Мероприятия
+                      img.events__item-img(src="images/content/events/events-3.png", alt="")
+                    .events__date 22.04.2022
+                    .events__desc Смена “Чемпионы” на базе КГБОУ ДО
+                  .events__item.card
+                    a(href="#").events__item-link.item-link
+                      span
+                    .events__img-wrapper
+                      a(href="#").events__item-tag.events__item-tag_orange Новости
+                      img.events__item-img(src="images/content/events/events-4.png", alt="")
+                    .events__date 22.04.2022
+                    .events__desc Смена “Чемпионы” на базе КГБОУ ДО
+                  .events__item.card
+                    a(href="#").events__item-link.item-link
+                      span
+                    .events__img-wrapper
+                      a(href="#").events__item-tag.events__item-tag_blue Мероприятия
+                      img.events__item-img(src="images/content/events/events-5.png", alt="")
+                    .events__date 22.04.2022
+                    .events__desc Смена “Чемпионы” на базе КГБОУ ДО
+              .events__allBtn.btn Смотреть все события   
+        section.contact.section
+          .container
+            .contact__inner
+              .contact__side
+                .contact__logo
+                  img.contact__logo-img(src="images/logo/logo.svg", alt="")
+                .contact__head.head
+                  h1.contact__title Связаться с нами
+                  .head__img#arrow-contact
+                p.contact__desc Отправьте нам сообщение. Мы свяжемся с вами и уточним все детали.
+              .contact__side
+                form.contact-form.contact__form
+                  input.contact-form__input(type="text", placeholder="Телефон*")
+                  input.contact-form__input(type="text", placeholder="Имя")
+                  textarea.contact-form__input.contact-form__area(placeholder="Текст сообщения")
+                  span.contact-form__policy Нажимая "Отправить" вы соглашаетесь с политикой обработки персональных данных
+                  input.contact-form__btn.btn(type="submit" value="Отправить")
+      footer.footer
+        .footer__inner
+          .footer__logo
+            img.footer__logo-text(src="images/logo/logo-textWhite.svg", alt="")
+          .footer__links
+            .footer__link-list
+              h3.footer__heading О нас
+              ul.footer__list
+                li.footer__list-item
+                  a(href="#").footer__list-link История центра 
+                li.footer__list-item
+                  a(href="#").footer__list-link Персонал 
+                li.footer__list-item
+                  a(href="#").footer__list-link Документы 
+                li.footer__list-item
+                  a(href="#").footer__list-link Вакансии 
+                li.footer__list-item
+                  a(href="#").footer__list-link Партнерам 
+                li.footer__list-item
+                  a(href="#").footer__list-link Благодарности 
+                li.footer__list-item
+                  a(href="#").footer__list-link Проверка 
+                li.footer__list-item
+                  a(href="#").footer__list-link Правила внутреннего распорядка 
+            .footer__link-list
+              h3.footer__heading Спортивная школа
+              ul.footer__list
+                li.footer__list-item
+                  a(href="#").footer__list-link Самбо 
+                li.footer__list-item
+                  a(href="#").footer__list-link Прыжки на батуте 
+                li.footer__list-item
+                  a(href="#").footer__list-link Бокс
+                li.footer__list-item
+                  a(href="#").footer__list-link Каратэ 
+                li.footer__list-item
+                  a(href="#").footer__list-link Борьба 
+                li.footer__list-item
+                  a(href="#").footer__list-link Бокс 
+                li.footer__list-item
+                  a(href="#").footer__list-link Дзюдо 
+                li.footer__list-item
+                  a(href="#").footer__list-link Киокусинкай 
+            .footer__link-list.footer__link-list_with-headers
+              a.footer__list-link(href="#")
+                h3.footer__heading Услуги
+              a.footer__list-link(href="#")
+                h3.footer__heading Стоимость услуг
+              a.footer__list-link(href="#")
+                h3.footer__heading Расписание
+              a.footer__list-link(href="#")
+                h3.footer__heading События
+              a.footer__list-link(href="#")
+                h3.footer__heading Контакты
+          .footer__contacts
+            a.footer__contact(href="mailto:") edinoborstva_27@mail.ru
+            a.footer__contact(href="tel:") +7 (4212) 45-78-22
+            span.footer__contact г. Хабаровск, ул. Морозова Павла Леонтьевича, д. 138
+          .footer__feedback
+            h3.footer__heading Оставить заявку
+            span.footer__desc Если у вас возникли вопросы, оставьте заявку
+            .footer__contactBtn.btn Связаться
+          .footer__socials
+            a.footer__social-link(href="#")
+              img.footer__ok.social-icon(src="images/icons/ok.svg", alt="") 
+            a.footer__social-link(href="#")
+              img.footer__vk.social-icon(src="images/icons/vk.svg", alt="") 
+          .footer__license
+            span.footer__copyright ©2022 - Краевой центр единоборств |   Все права защищены
+            a.footer__privacy(href="#") Политика конфиденциальности
+          .footer__webalt-wrapper
+            a.footer__webalt-link(href="#") 
+              img.footer__webalt-img(src="images/logo/logowebalt.svg", alt="")
+      .form-wrapper
+        .form__head
+          h1.form__title Связаться с нами
+          .form__closeBtn.arrow
+            .arrow__circle
+            img.closeBtn__img(src="images/icons/cross.svg", alt="")
+        .form__container
+          form.contact-form.form
+            input.contact-form__input(type="text", placeholder="Телефон*")
+            input.contact-form__input(type="text", placeholder="Имя")
+            textarea.contact-form__input.contact-form__area(placeholder="Текст сообщения")
+            span.contact-form__policy Нажимая "Отправить" вы соглашаетесь с политикой обработки персональных данных
+            input.contact-form__btn.btn(type="submit" value="Отправить")            
+  
