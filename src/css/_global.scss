@@ -73,6 +73,7 @@ h3{
     cursor: $pointer;
     border-radius: 500px;
     background: $text;
+    border:none;
     color:#fff;
     padding: 22px 61px;
     font-size: 24px;
@@ -245,4 +246,22 @@ h3{
 #arrow-contact>svg{
     width: auto;
     height: 69px;
+}
+.breadcrumbs{
+    display: flex;
+    gap:41px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    &>&__item:not(:last-child){
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            right:-29px;
+            height:15px;
+            width: 15px;
+            background-image: url(../images/icons/arrow.svg);
+            background-size: 100% 100%;
+        }
+    }
 }

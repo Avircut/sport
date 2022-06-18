@@ -34,7 +34,8 @@ const optimization = () => {
 module.exports = {
     context: path.resolve(__dirname,'src'),
     entry:{
-        main:['@babel/polyfill','./index.js'],
+        'index.pug':['@babel/polyfill','./js/index.js'],
+        'leaders.pug':['@babel/polyfill','./js/leaders.js']
     },
     output:{
         filename: filename('js'),
@@ -57,6 +58,7 @@ module.exports = {
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template:`${PAGES_DIR}/${page}`,
             filename:`./${page.replace(/\.pug/,'.html')}`,
+            chunks:[page],
             minify:{
                 collapseWhitespace:isProd
             }

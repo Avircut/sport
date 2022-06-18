@@ -1,0 +1,222 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Главная
+  body 
+    .circle
+    .arrow-top.arrow
+      .arrow__circle_not_animated.arrow__circle
+      img.arrow-top__img(src="images/icons/arrow.svg", alt="")
+    header.header#top
+      .container
+        .header__inner
+          .top-line
+            .top-line__logo.logo
+              a(href="#").logo__link 
+                img.logo__img(src="images/logo/logo.svg", alt="")  
+              img.logo__text(src="images/logo/logo-text.svg", alt="")
+            .top-line__herb-wrapper
+              .top-line__herb
+                img.top-line__herb-img(src="images/logo/herb.svg", alt="")
+            .top-line__contacts
+              a.top-line__email(href="mailto:") edinoborstva_27@mail.ru
+              a.top-line__phone(href="tel:") +7 (4212) 45-78-22
+            .top-line__eye
+              img.top-line__eye-img(src="images/icons/eye.svg", alt="")
+            .top-line__search
+              input.top-line__search-input(type="text",placeholder="поиск")
+              .top-line__search-btn
+            .top-line__burger
+              img(src="images/icons/burger.svg", alt="")
+            .burger__menu-wrapper
+              .burger__closeBtn
+                img.closeBtn__img(src="images/icons/cross.svg", alt="")
+              ul.burger__menu
+              .burger__features
+          nav.header__nav.nav
+            ul.nav__menu
+              li.nav__menu-item
+                a(data-scroll, href="#about").nav__menu-link О центре
+              li.nav__menu-item
+                a(href="#").nav__menu-link Спортивная школа
+              li.nav__menu-item
+                a(href="#").nav__menu-link Услуги
+              li.nav__menu-item
+                a(href="#").nav__menu-link Стоимость услуг
+              li.nav__menu-item
+                a(href="#").nav__menu-link Расписание
+              li.nav__menu-item
+                a(href="#").nav__menu-link События
+              li.nav__menu-item
+                a(href="#").nav__menu-link Контакты
+    .wrapper
+      main.main
+        section.banner
+            .container
+              .banner__inner
+                .banner__breadcrumbs.breadcrumbs
+                  a.breadcrumbs__item(href="#") Главная
+                  a.breadcrumbs__item(href="#") Руководство
+                .banner__title.head
+                  h1.banner__title-text Руководство
+                  .banner__title-img.head__img#leaders
+        section.leaders
+          .container
+            .leaders__inner
+              .leaders__controls
+                button.leaders__control.btn(type="button" data-filter="all") Все
+                button.leaders__control.btn(type="button" data-filter=".admins") Администраторы 
+                button.leaders__control.btn(type="button" data-filter=".directors") Директоры
+              .leaders__items
+                  .leaders__item.mix.admins
+                    img.leaders__img(src="./images/content/leaders/leaders-1.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Администратор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.admins
+                    img.leaders__img(src="./images/content/leaders/leaders-2.png", alt="")
+                    h2.leaders__title Анастасия иванова
+                    span.leaders__type Администратор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.admins
+                    img.leaders__img(src="./images/content/leaders/leaders-3.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Администратор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.admins
+                    img.leaders__img(src="./images/content/leaders/leaders-4.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Администратор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.admins
+                    img.leaders__img(src="./images/content/leaders/leaders-4.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Администратор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.directors
+                    img.leaders__img(src="./images/content/leaders/leaders-1.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Директор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.directors
+                    img.leaders__img(src="./images/content/leaders/leaders-4.png", alt="")
+                    h2.leaders__title Анастасия иванова
+                    span.leaders__type Директор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.directors
+                    img.leaders__img(src="./images/content/leaders/leaders-3.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Директор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.directors
+                    img.leaders__img(src="./images/content/leaders/leaders-2.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Директор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+                  .leaders__item.mix.directors
+                    img.leaders__img(src="./images/content/leaders/leaders-1.png", alt="")
+                    h2.leaders__title Денис Александров
+                    span.leaders__type Директор
+                    p.leaders__desc Обладатель черного пояса. Преподает каратэ более 10 лет.
+
+      footer.footer
+        .footer__inner
+          .footer__logo
+            img.footer__logo-text(src="images/logo/logo-textWhite.svg", alt="")
+          .footer__links
+            .footer__link-list
+              h3.footer__heading О нас
+              ul.footer__list
+                li.footer__list-item
+                  a(href="#").footer__list-link История центра 
+                li.footer__list-item
+                  a(href="#").footer__list-link Персонал 
+                li.footer__list-item
+                  a(href="#").footer__list-link Документы 
+                li.footer__list-item
+                  a(href="#").footer__list-link Вакансии 
+                li.footer__list-item
+                  a(href="#").footer__list-link Партнерам 
+                li.footer__list-item
+                  a(href="#").footer__list-link Благодарности 
+                li.footer__list-item
+                  a(href="#").footer__list-link Проверка 
+                li.footer__list-item
+                  a(href="#").footer__list-link Правила внутреннего распорядка 
+            .footer__link-list
+              h3.footer__heading Спортивная школа
+              ul.footer__list
+                li.footer__list-item
+                  a(href="#").footer__list-link Самбо 
+                li.footer__list-item
+                  a(href="#").footer__list-link Прыжки на батуте 
+                li.footer__list-item
+                  a(href="#").footer__list-link Бокс
+                li.footer__list-item
+                  a(href="#").footer__list-link Каратэ 
+                li.footer__list-item
+                  a(href="#").footer__list-link Борьба 
+                li.footer__list-item
+                  a(href="#").footer__list-link Бокс 
+                li.footer__list-item
+                  a(href="#").footer__list-link Дзюдо 
+                li.footer__list-item
+                  a(href="#").footer__list-link Киокусинкай 
+            .footer__link-list.footer__link-list_with-headers
+              a.footer__list-link(href="#")
+                h3.footer__heading Услуги
+              a.footer__list-link(href="#")
+                h3.footer__heading Стоимость услуг
+              a.footer__list-link(href="#")
+                h3.footer__heading Расписание
+              a.footer__list-link(href="#")
+                h3.footer__heading События
+              a.footer__list-link(href="#")
+                h3.footer__heading Контакты
+          .footer__contacts
+            a.footer__contact(href="mailto:") edinoborstva_27@mail.ru
+            a.footer__contact(href="tel:") +7 (4212) 45-78-22
+            span.footer__contact г. Хабаровск, ул. Морозова Павла Леонтьевича, д. 138
+          .footer__feedback
+            h3.footer__heading Оставить заявку
+            span.footer__desc Если у вас возникли вопросы, оставьте заявку
+            .footer__contactBtn.btn Связаться
+          .footer__socials
+            a.footer__social-link(href="#")
+              img.footer__ok.social-icon(src="images/icons/ok.svg", alt="") 
+            a.footer__social-link(href="#")
+              img.footer__vk.social-icon(src="images/icons/vk.svg", alt="") 
+          .footer__license
+            span.footer__copyright ©2022 - Краевой центр единоборств |   Все права защищены
+            a.footer__privacy(href="#") Политика конфиденциальности
+          .footer__webalt-wrapper
+            a.footer__webalt-link(href="#") 
+              img.footer__webalt-img(src="images/logo/logowebalt.svg", alt="")
+      .modal#form-modal
+        .form__head
+          h1.form__title Связаться с нами
+          .form__closeBtn.arrow
+            .arrow__circle
+            img.closeBtn__img(src="images/icons/cross.svg", alt="")
+        .form__container
+          form.contact-form.form
+            input.contact-form__input(type="text", placeholder="Телефон*")
+            input.contact-form__input(type="text", placeholder="Имя")
+            textarea.contact-form__input.contact-form__area(placeholder="Текст сообщения")
+            span.contact-form__policy Нажимая "Отправить" вы соглашаетесь с политикой обработки персональных данных
+            input.contact-form__btn.btn(type="submit" value="Отправить")         
+      .modal#leader-info
+        .form__head
+          .form__closeBtn.arrow
+            .arrow__circle
+            img.closeBtn__img(src="images/icons/cross.svg", alt="")
+        .form__leader.leader
+          img.leader__img(src="images/content/leaders/leaders-1-sm.png", alt="")
+          .leader__text
+            h2.leader__title Денис Александров
+            .leader__collapsible
+              span.leader__type Директор
+              p.leader__desc Ровное отношение, заинтересованность в развитии каждого занимающегося, желание поделиться своими знаниями, умение создать благоприятную атмосферу в коллективе – вот основные качества грамотного тренера, ученики которого добиваются отличных результатов. <br /><br />Спортсмены выступающие на профессиональном ринге проводят не менее 10 тренировок в неделю + проходят тренировочные сборы не менее 1 раза в год, где количество тренировок доходит до 3-х, в день. Средняя продолжительность таких сборов составляет 3 недели.

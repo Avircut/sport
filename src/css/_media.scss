@@ -1,23 +1,12 @@
 @media(max-width: 1760px){
-  .about{
-    margin-bottom: 100px;
-  }
+
   .directions{
     margin-bottom: 100px;
     &__items{
       justify-content: center;
     }
   }
-  .events{
-    &__btn{
-      padding-right: 20px;
-    }
-  }
-  .footer{
-    &__inner{
-      grid-template: auto auto auto / 20% 60% 20%;
-    }
-  }
+
 }
 @media (max-width:1530px){
   h1{
@@ -35,33 +24,10 @@
   html,body{
     font-size: 18px;
   }
-  .about{
-    &__head{
-      min-width: 530px;
-    }
-  }
-  .footer{
-    &__links{
-      padding-left:40px;
-    }
-    &__link-list{
-      max-width: 220px;
-    }
-    &__link-list_with-headers{
-      padding-left: 15px;
-    }
-  }
 }
 
 @media (max-width:1430px) {
-  .header{
-    .top-line{
-      &__herb-wrapper{
-        display: none;
-      }
-  }
 
-  }
   .contact{
     &__logo-img{
       max-width: 480px;
@@ -77,52 +43,8 @@
       }
     }
   }
-  .footer{
-    &__contacts{
-      padding-left: 30px;
-    }
-  }
-  .banner{
-    &__desc{
-      max-width: 500px;
-    }
-  }
-}
-@media (max-width:1290px){
-  .header{
-    .top-line{
-      &__contacts{
-        justify-content: center;
-        padding-right: 10px;
-        padding-left: 10px;
-      }
-    }
-  }
 }
 @media (max-width:1230px){
-  .header{
-    .top-line{
-      &__logo{
-        width: 100%;
-      }
-      &__contacts{
-        display: none;
-      }
-      &__eye{
-        display: none;
-      }
-      &__search{
-        display: none;
-      }
-      &__burger{
-        display: flex;
-        width: 100px;
-      }
-    }
-    .nav{
-      display: none;
-    }
-  }
   .contact{
     &__form{
       margin-right:150px;
@@ -132,93 +54,15 @@
       }
     }
   }
-  .footer{
-    overflow: hidden;
-    &__logo{
-      padding: 39px 10px;
-    }
-    &__links{
-      padding-right: 30px;
-      gap:25px;
-    }
-    &__feedback{
-      padding: 62px 10px;
-    }
-    &__contactBtn{
-      padding: 20px 50px;
-    }
-  }
-}
-@media (max-width:1150px){
-  .footer{
-    &__links{
-      padding:62px 10px 50px;
-      gap:15px;
-    }
-    &__inner{
-      grid-template: auto auto auto / 20% 57% 23%;
-    }
-    &__logo-text{
-      max-width:195px;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-    &__contacts{
-      padding-left: 15px;
-    }
-  }
 }
 @media (max-width:1080px) {
-  .banner{
-    &__details{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-  .about{
-    padding-top: 100px;
-    margin-bottom: 0;
-    &__inner{
-      flex-direction: column-reverse;
-      justify-content: center;
-    }
-    &__desc{
-      max-width: unset;
-    }
-    &__collage{
-      z-index: -1;
-      max-width: 800px;
-      width: 100%;
-      margin-top: -100px;
-    }
-  }
+
   .directions{
     .head__img{
       display: none;
     }
     &__item{
       width: 45vw;
-    }
-  }
-  .events{
-    &__inner{
-      gap:25px;
-    }
-    .head__img{
-      display: none;
-    }
-    &__latest{
-      grid-template-columns: repeat(2,1fr);
-      :first-child{
-        grid-column: 1;
-      }
-      :last-child{
-        grid-column: 2;
-      }
-    }
-    &__others{
-      grid-template-columns: repeat(2,1fr);
     }
   }
   .contact{
@@ -248,85 +92,7 @@
       order: 1;
     }
   }
-  .form-wrapper{
-    width: 100vw;
-    padding: 50px;
-    .form__container{
-      background-size: 603px 606px;
-    }
-  }
-}
-@media (max-width:1050px) {
-  .footer{
-    &__inner{
-      grid-template: auto auto auto auto auto / repeat(3,1fr);
-      border-radius: 20px;
-    }
-    &__logo{
-      grid-column: 1/4;
-      grid-row: 1;
-      justify-content: flex-start;
-      border: none;
-      padding-left: 20px;
-    }
-    &__links{
-      grid-row: 2;
-      grid-column: 1/4;
-      flex-wrap: wrap;
-      justify-content: center;
-      border-left: none;
-      border-right: none;
-      border-bottom: 1px solid #fff;
-    }
-    &__heading{
-      white-space: unset;
-    }
-    &__link-list{
-      max-width: 180px;
-    }
-    &__link-list_with-headers{
-      flex-direction: row;
-      flex-wrap: wrap;
-      max-width: 500px;
-    }
-    &__contacts{
-      grid-row:3;
-      grid-column:1;
-      border: none;
-    }
-    &__contact{
-      max-width: unset;
-    }
-    &__socials{
-      border: none;
-      min-height: unset;
-      grid-row:3;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-end;
-      padding:10px;
-      grid-column:3;
-    }
-    &__license{
-      grid-row: 6;
-      grid-column: 1/4;
-      padding:15px 10px;
-      border-left: none;
-      border-right: none;
-    }
-    &__webalt-wrapper{
-      grid-row: 7;
-      grid-column: 1/4;
-      padding:15px 10px;
-      border:none;
-    }
-    &__feedback{
-      grid-row: 3;
-      grid-column: 2;
-      padding: 25px 10px;
-      border: none;
-    }
-  }
+
 }
 @media (max-width:800px) {
   .logo{
@@ -367,23 +133,6 @@
       height: 46px;
     }
   }
-
-  .banner{
-    padding-top: 50px;
-    padding-bottom: 40px;
-    &__arrows{
-      bottom: 20px;
-    }
-    &__img{
-      min-height: 175px;
-    }
-
-  }
-  .about{
-    &__text{
-      gap:30px;
-    }
-  }
   .directions{
     &__inner{
       gap:30px;
@@ -397,16 +146,6 @@
       max-width: 380px;
     }
   }
-  .form-wrapper{
-    .form{
-      padding-top: 50px;
-      &__closeBtn{
-        margin-top: 0;
-        align-self: center;
-      }
-
-    }
-  }
   .contact-form{
     &__input{
       padding: 13px 22px;
@@ -417,30 +156,6 @@
   }
 }
 @media (max-width:600px){
-  .header{
-    .top-line{
-      .burger__menu-wrapper{
-        width: 100vw;
-        gap:15px;
-      }
-      .burger__closeBtn{
-        margin-bottom: 0;
-      }
-    }
-  }
-  .about{
-    &__head{
-      display: flex;
-      justify-content: space-between;
-      min-width: unset;
-    }
-    &__collage{
-      margin-top: -70px;
-    }
-    .head__img{
-      margin-left: 0;
-    }
-  }
   .directions{
     &__item{
       min-height: 250px;
@@ -453,117 +168,16 @@
       height: 72px;
     }
   }
-  .events{
-    &__item{
-      min-height:unset;
-    }
-    &__item-img{
-      width: 90vw;
-      height: calc(100vw/2.71);
-      object-fit: cover;
-    }
-    &__item-tag{
-      top:12px;
-      left:12px;
-      padding:7px 15px;
-      font-size:12px;
-    }
-    &__img-wrapper{
-      border-radius: 20px;
-    }
-    .head{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .head__img{
-      display: inline;
-      margin-left:0;
-    }
-    &__btn{
-      display: none;
-    }
-    &__latest{
-      grid-template-columns: 100%;
-      :first-child,:last-child{
-        grid-column: 1;
-      }
-    }
-    &__allBtn{
-      display: block;
-    }
-    &__others{
-      grid-template-columns: 100%;
-      &>*{
-        grid-column: 1;
-      }
-      >:nth-child(n+2){
-        display: none;
-      }
-    }
-  }
-  .form-wrapper{
-    .form{
-      padding-top: 0;
-    }
-    .form__container{
-      padding: 20px;
-    }
-  }
   .contact-form{
     &__area{
       min-height: 140px;
     }
   }
-  .footer{
-    &__links{
-      padding:40px 10px;
-    }
-    &__feedback{
-      align-items: flex-start;
-      grid-row:4;
-      grid-column:1/3;
-    }
-    &__contacts{
-      grid-row: 3;
-      grid-column: 1/4;
-    }
-    &__socials{
-      grid-row: 4;
-      grid-column: 3;
-    }
-    &__desc{
-      margin-bottom: 7px;
-    }
-    &__license{
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      padding:40px 10px;
-    }
-  }
 }
 @media (max-width:400px) {
-  .events{
-    &__item-img{
-      width: 309px;
-      height: 142px;
-      object-fit: cover;
-    }
-  }
   .contact{
     &__logo-img{
       max-width: 95vw;
-    }
-  }
-}
-@media (max-width:399px) {
-  .footer{
-    &__links{
-      justify-content: flex-start;
-    }
-    &__link-list{
-      padding-left: 20px;
     }
   }
 }

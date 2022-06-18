@@ -29,6 +29,7 @@ $('.burger__features').append($search);
 // Бургер
 $('.top-line__burger').on('click', (e) => {
   e.stopPropagation();
+  $('.modal').removeClass('modal_opened');
   $('.burger__menu-wrapper').toggleClass('burger__menu-wrapper_opened');
 });
 $('.burger__closeBtn').on('click', (e) => {
@@ -38,18 +39,19 @@ $('.burger__closeBtn').on('click', (e) => {
 // Форма в футере
 $('.footer__contactBtn').on('click', (e) => {
   e.stopPropagation();
-  $('.form-wrapper').toggleClass('form-wrapper_opened');
+  $('.modal').removeClass('modal_opened');
+  $('#form-modal').toggleClass('modal_opened');
 });
 $('.form__closeBtn').on('click', (e) => {
   e.stopPropagation();
-  $('.form-wrapper').removeClass('form-wrapper_opened');
+  $('.modal').removeClass('modal_opened');
 })
 // Закрытие по клику вне формы/меню в бургере
 $(document).on('click', (e) => {
   let $target = $(e.target);
   if(!$target.closest('.burger__menu-wrapper_opened').length)
     $('.burger__menu-wrapper').removeClass('burger__menu-wrapper_opened');
-  if(!$target.closest('.form-wrapper_opened').length){
-    $('.form-wrapper').removeClass('form-wrapper_opened');
+  if(!$target.closest('.modal_opened').length){
+    $('.modal').removeClass('modal_opened');
   }
-})
+});
